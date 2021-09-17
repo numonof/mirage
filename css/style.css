@@ -1,0 +1,368 @@
+@import url('http://fonts.cdnfonts.com/css/circular-std-book');
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #FCFCFC;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.nav , .footer-menyu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    align-items: center ;
+}
+.nav-item{
+    padding-left: 72px;
+}
+.nav-link{
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    transition: 0.4s;
+    color: #AAAAAB;
+    text-decoration: none;
+}
+.active{
+    color: #56597A;
+    
+}
+.nav-link:hover{
+    color:  #56597A;
+}
+.right{
+    padding-top: 63px;
+}
+.text{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 15px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #919299;
+}
+.dec-title{
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;    
+    color: #F78CB6;
+    padding: 0;
+}
+.hed-pre-title::before{
+    content: "";
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+    background-color: #F78CB6;
+    border-radius: 25%;
+}
+.title{
+    margin: 0;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 74px;
+    
+    color: #56597A;
+    
+}
+.button{
+    position: relative;
+    padding: 18px 65px 18px 22px;
+    text-decoration: none;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    background: #F78BB6;
+    border-radius: 4px;
+}
+.icon{
+    position: absolute;
+    font-size: 35px;
+    top: 12px;
+    right: 14px;
+}
+
+.left{
+    padding-top: 55px;
+}
+.hed-img{
+    width: 532px;
+    height: 532px;
+    padding-left: 25px;
+}
+.services-title{
+    text-align: center;
+}
+.services-container{
+    padding: 25px 0;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+}
+.card{
+    padding: 23px;
+    height: 270px;
+    padding-top: 55px;
+    background: #FFF1F9;
+    border-radius: 8px;
+    margin: 10px;
+    transition: 0.4s;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+/* }
+} */
+/* .card{
+    height:470px ;
+    padding: 5px;
+    background: linear-gradient(180deg, #202246 -53.38%, rgba(40, 43, 87, 0.17) 100%);
+    border-radius: 20px;
+    transition: 0.4s;
+    
+} */
+.card:hover{
+    height: 300px;
+    
+    background: #F78CB6;
+    border-radius: 8px;
+}
+.card:hover 
+.card-text{
+    color: #fff;
+}
+
+.card:hover 
+.card-title{
+    color: #fff;
+}
+.services-link{
+    position: relative;
+}
+.card-link{   
+    position: absolute;
+    left: 50px;
+    bottom: -50px;
+    
+    display: flex;
+    align-items: center;
+    font-family: Circular Std;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: 0.4s;
+}
+.card:hover .card-link {
+    text-decoration: none;
+    color:#fff ;
+    opacity: 1;
+    transition-delay: 0.16s;
+}
+.card-title{
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 72px;
+    margin:0; 
+    color: #56597A;
+}
+.card-text{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #919299;
+}
+.one-page{
+    display: flex;
+    flex-flow: row-reverse;
+}
+.sub-titile{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    color: #56597A;
+}
+.sub-text{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ABABAB;
+    
+}
+#brends{
+    padding: 25px 0;
+}
+.brends{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact{
+    padding: 55px 0;
+}
+
+
+.input-item{
+    width: 600px;
+    height: 80px;
+    margin:10px 0 10px 0;
+    border: 2px solid #DADCE5;
+    background: #fff;
+    border-radius: 5px;
+    padding: 16px 195px 16px 45px ;
+    outline: none;
+    color: #D2D2D2;;
+    
+}
+.form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.form::before{
+    content: "";
+    width: 350px;
+    height: 350px;
+    background: url("../img/title/export.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 5px;
+}
+.mail-bx{
+    position: absolute;
+    left: 298px;
+    bottom: 38px;
+    font-size: 20px;
+    color: #D2D2D2;;
+}
+.main-link{
+    position: absolute;
+    top: 155px;
+    right: 286px;
+}
+.h-l-text{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+    
+    letter-spacing: 0.02em;
+    
+    color: #919299;
+    
+}
+footer{
+    padding: 25px 0;
+}
+.f-icon{
+    font-size: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+}
+.f-menu p{
+    
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    
+    letter-spacing: 0.02em;
+    
+    color: #56597A;
+    
+}
+.f-item{
+    list-style: none;
+}
+
+.f-link{
+    text-decoration: none;
+    
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+    
+    letter-spacing: 0.02em;
+    
+    color: #919299;
+    
+    
+    text-transform: capitalize;
+}
+
+.footer-end{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.footer-end p{
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 30px;
+    /* identical to box height, or 214% */
+    
+    letter-spacing: 0.02em;
+    
+    color: #FFFFFF;
+    
+}
+#end{
+    background-color: #F78BB6;
+}
+.select{
+    border:none;
+}
